@@ -7,13 +7,14 @@ import com.mikail.sauceshopping.models.SignUpData
 import retrofit2.Response
 import javax.inject.Inject
 
-class ApiHelperImpl @Inject constructor(api: SauceApi, dao: SauceDao):ApiHelper {
+class ApiHelperImpl @Inject constructor(private val api: SauceApi, private val dao: SauceDao):ApiHelper {
 
     override suspend fun login(loginData: LoginData): Response<LoginResponse> {
-        TODO("Not yet implemented")
+        return  api.login(loginData)
     }
 
     override suspend fun signUp(register: SignUpData): Response<LoginResponse> {
-        TODO("Not yet implemented")
+
+        return api.signUp(register)
     }
 }

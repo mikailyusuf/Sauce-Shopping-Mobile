@@ -58,9 +58,6 @@ class ApplicationModule {
             .writeTimeout(120, TimeUnit.SECONDS)
             .readTimeout(120, TimeUnit.SECONDS)
             .addNetworkInterceptor(ServiceInterceptor())
-//            .authenticator(TokenAuthenticator(db))
-//            .followRedirects(FALSE)
-//            .followSslRedirects(FALSE)
             .build()
 
         return Retrofit.Builder()
