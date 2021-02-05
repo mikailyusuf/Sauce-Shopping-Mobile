@@ -13,10 +13,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.SauceShopping">
-        <activity android:name=".ui.auth.SignUpActivity"
-            android:parentActivityName=".ui.auth.LoginActivity">
-
-        </activity>
+        <activity android:name=".ui.home.ItemDetailActivity"></activity>
+        <activity android:name=".ui.home.ShoppingActivity" />
+        <activity
+            android:name=".ui.auth.SignUpActivity"
+            android:parentActivityName=".ui.auth.LoginActivity" />
         <activity android:name=".ui.auth.LoginActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>

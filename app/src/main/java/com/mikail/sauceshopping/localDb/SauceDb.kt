@@ -2,14 +2,14 @@ package com.mikail.sauceshopping.localDb
 
 import androidx.room.Database
 import androidx.room.RoomDatabase
-import com.mikail.sauceshopping.models.LoginResponse
+import com.mikail.sauceshopping.models.DummyTable
 
 
 @Database(
-    entities = [LoginResponse::class],
+    entities = [DummyTable::class],
     version = 1
 )
 abstract class SauceDb : RoomDatabase(){
 
-    abstract fun getDao(): SauceDb
+    abstract fun getDao(): SauceDao
 }

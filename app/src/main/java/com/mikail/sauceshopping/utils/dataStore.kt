@@ -5,13 +5,13 @@ import androidx.datastore.preferences.core.Preferences
 import androidx.datastore.preferences.core.edit
 import androidx.datastore.preferences.core.stringPreferencesKey
 import androidx.datastore.preferences.createDataStore
-import com.mikail.sauceshopping.MainApplication
+import com.mikail.sauceshopping.di.SauceApplication.Companion.applicationContext
 import kotlinx.coroutines.flow.Flow
 import kotlinx.coroutines.flow.map
 
 object dataStore {
 
-    private val dataStore: DataStore<Preferences> = MainApplication.applicationContext().createDataStore(
+    private val dataStore: DataStore<Preferences> = applicationContext().createDataStore(
         name = "userToken"
     )
 

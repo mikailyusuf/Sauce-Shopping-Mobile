@@ -6,7 +6,6 @@ import com.mikail.sauceshopping.localDb.SauceDb
 import com.mikail.sauceshopping.network.ApiHelper
 import com.mikail.sauceshopping.network.ApiHelperImpl
 import com.mikail.sauceshopping.network.SauceApi
-import com.mikail.sauceshopping.network.ServiceInterceptor
 import com.mikail.sauceshopping.utils.Constants.BASE_URL
 import dagger.Module
 import dagger.Provides
@@ -57,7 +56,7 @@ class ApplicationModule {
             .connectTimeout(120, TimeUnit.SECONDS) //Backend is really slow
             .writeTimeout(120, TimeUnit.SECONDS)
             .readTimeout(120, TimeUnit.SECONDS)
-            .addNetworkInterceptor(ServiceInterceptor())
+//            .addNetworkInterceptor(ServiceInterceptor())
             .build()
 
         return Retrofit.Builder()
