@@ -74,6 +74,11 @@ dependencies {
     implementation 'com.github.chnouman:AwesomeDialog:1.0.5'
 
 
+    implementation 'me.relex:circleindicator:2.1.4'
+
+    implementation 'com.github.ImaginativeShohag:Why-Not-Image-Carousel:v1.1.0'
+
+
     //DataStore
     implementation "androidx.datastore:datastore-preferences:1.0.0-alpha06"
 
